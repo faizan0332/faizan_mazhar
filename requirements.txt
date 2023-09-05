@@ -1,0 +1,5 @@
+rpaframework==24.1.1
+robocorp==0.8.1
+robocorp-browser==2.0.1
+robocorp-excel==0.4.0
+robocorp-http==0.2.0
