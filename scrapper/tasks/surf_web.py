@@ -28,6 +28,7 @@ class Scrapper:
         self.browser_client.open_site(WEB_SITE_URL)
         self.browser_client.execute_operation(
             [
+		generate_action("wait", 'css:button[aria-controls="search-input"]'),
                 generate_action("click", 'css:button[aria-controls="search-input"]'),
                 generate_action("wait", 'css:input[name="query"]'),
                 generate_action(
