@@ -25,7 +25,6 @@ class BrowserClient:
     
     def open_site(self, site_url):
         self.browser_driver.open_available_browser(site_url, maximized=True)
-        self.browser_driver.maximize_browser_window()
     
     def close_browser(self):
         self.browser_driver.close_all_browsers()
