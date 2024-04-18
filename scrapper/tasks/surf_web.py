@@ -33,7 +33,7 @@ class Scrapper:
                 generate_action("wait", 'css:input[name="query"]'),
                 generate_action(
                     "insert_text", 'css:input[name="query"]', search_phrase),
-                generate_action("click", 'css:button[data-test-id="search-submit"]'),
+                generate_action("click", 'css:button[data-testid="search-submit"]'),
                 generate_action("wait", 'css:div[data-testid="section"] button'),
                 generate_action("click", 'css:div[data-testid="section"] button'),
             ],
