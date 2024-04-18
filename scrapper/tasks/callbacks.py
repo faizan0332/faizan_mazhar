@@ -24,9 +24,8 @@ def __extract_element(web_element, locator, element_locator):
 def handle_terms_popup_callback(browser_driver, target, **kwargs):
     logger.info("Closing popup dialogs")
     try:
-        browser_driver.click_button(
-            browser_driver.find_element(kwargs.get("target_button"))
-        )
+        browser_driver.wait_until_element_is_visible('//button[contains(text(), "Accept all")]')
+        browser_driver.click_button('//button[contains(text(), "Accept all")]')
     except:
         logger.warning("[WARNING]: Popup element not found")
 
